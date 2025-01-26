@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StoreItemView: View {
     
-    let order: OrderType
+    let store: StoreType
     
     var body: some View {
         HStack {
@@ -20,7 +20,7 @@ struct StoreItemView: View {
                 .fixedSize(horizontal: false, vertical: true)
             
             VStack {
-                Text(order.name)
+                Text(store.name)
                     .font(.subheadline)
             }
             Spacer()
@@ -29,5 +29,5 @@ struct StoreItemView: View {
 }
 
 #Preview {
-    StoreItemView(order: OrderType(id: 1, name: "Monstro Burguer", image: "Restaurante Image"))
+    StoreItemView(store: storesMock[0])
 }
