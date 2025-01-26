@@ -45,11 +45,6 @@
 			path = ChefDeliveryUITests;
 			sourceTree = "<group>";
 		};
-		1382FCBD2D45A6550083502E /* NavigationBar */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = NavigationBar;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				137D5B562D45A3A300847E66 /* ChefDelivery */,
-				1382FCBD2D45A6550083502E /* NavigationBar */,
 				137D5B672D45A3A500847E66 /* ChefDeliveryTests */,
 				137D5B712D45A3A500847E66 /* ChefDeliveryUITests */,
 				137D5B552D45A3A300847E66 /* Products */,
@@ -115,7 +109,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				137D5B562D45A3A300847E66 /* ChefDelivery */,
-				1382FCBD2D45A6550083502E /* NavigationBar */,
 			);
 			name = ChefDelivery;
 			packageProductDependencies = (
