@@ -11,6 +11,8 @@ struct StoreDetailView: View {
     var store: StoreType
     @Environment(\.presentationMode) var presentationMode
     
+    @State private var selectedProduct: ProductType?
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading) {
@@ -55,8 +57,8 @@ struct StoreDetailView: View {
                 
                 ForEach(store.products) { product in
                     
-                    NavigationLink {
-                        ProductDetailView(prodcut: product)
+                    Button {
+                        selectedProduct = product
                     } label: {
                         HStack {
                             VStack (alignment: .leading, spacing: 8) {
@@ -80,6 +82,9 @@ struct StoreDetailView: View {
                         }
                         .padding()
                         .foregroundColor(.black)
+                    }
+                    .sheet(item: $selectedProduct) { product in
+                        ProductDetailView(prodcut: product)
                     }
                 }
             }

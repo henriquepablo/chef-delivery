@@ -18,11 +18,13 @@ struct ProductDetailView: View {
                 ContainerRelativeShape()
                     .shadow(radius: 20)
                     .frame(width: .infinity, height: 230)
+                    .foregroundColor(.gray)
                 
                 Text(prodcut.name)
                     .font(.title)
                     .bold()
                     .padding(.horizontal)
+                    .padding(.top)
                 
                 Text(prodcut.description)
                     .padding(.horizontal)
